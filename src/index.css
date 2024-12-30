@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=cal-sans@400,500,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Cal Sans", "Inter", sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#4f46e5] text-white px-4 py-2 rounded-md hover:bg-[#4338ca] transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-600 text-white px-4 py-2 rounded-md hover:bg-secondary-700 transition-colors;
+  }
+}
